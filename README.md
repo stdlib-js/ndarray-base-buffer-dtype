@@ -34,14 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-base-buffer-dtype
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-buffer-dtype@esm/index.mjs';
+var dtype = require( '@stdlib/ndarray-base-buffer-dtype' );
 ```
 
 #### dtype( buffer )
@@ -49,7 +65,7 @@ import dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-buffer-dty
 Returns the [data type][@stdlib/ndarray/dtypes] of an ndarray data [`buffer`][@stdlib/ndarray/base/buffer-ctors].
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+var Float64Array = require( '@stdlib/array-float64' );
 var buf = new Float64Array( 10 );
 
 var dt = dtype( buf );
@@ -83,16 +99,11 @@ var dt = dtype( 'beep' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@esm/index.mjs';
-import bufferCtors from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-buffer-ctors@esm/index.mjs';
-import isFunction from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-function@esm/index.mjs';
-import dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-buffer-dtype@esm/index.mjs';
+```javascript
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var bufferCtors = require( '@stdlib/ndarray-base-buffer-ctors' );
+var isFunction = require( '@stdlib/assert-is-function' );
+var dtype = require( '@stdlib/ndarray-base-buffer-dtype' );
 
 var DTYPES;
 var ctor;
@@ -125,10 +136,6 @@ buf = {
 };
 dt = dtype( buf );
 console.log( '%s == %s => %s', 'generic', dt, dt === 'generic' );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -160,7 +167,7 @@ console.log( '%s == %s => %s', 'generic', dt, dt === 'generic' );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -216,12 +223,13 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/ndarray-base-buffer-dtype/tree/deno
 [umd-url]: https://github.com/stdlib-js/ndarray-base-buffer-dtype/tree/umd
 [esm-url]: https://github.com/stdlib-js/ndarray-base-buffer-dtype/tree/esm
+[branches-url]: https://github.com/stdlib-js/ndarray-base-buffer-dtype/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-base-buffer-dtype/main/LICENSE
 
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes/tree/esm
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
 
-[@stdlib/ndarray/base/buffer-ctors]: https://github.com/stdlib-js/ndarray-base-buffer-ctors/tree/esm
+[@stdlib/ndarray/base/buffer-ctors]: https://github.com/stdlib-js/ndarray-base-buffer-ctors
 
 </section>
 
