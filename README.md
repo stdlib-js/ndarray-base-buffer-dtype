@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-buffer-dtype@esm/index.mjs';
+import dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-buffer-dtype@v0.2.1-esm/index.mjs';
 ```
 
 #### dtype( buffer )
@@ -103,7 +103,7 @@ var dt = dtype( 'beep' );
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@esm/index.mjs';
 import bufferCtors from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-buffer-ctors@esm/index.mjs';
 import isFunction from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-function@esm/index.mjs';
-import dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-buffer-dtype@esm/index.mjs';
+import dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-buffer-dtype@v0.2.1-esm/index.mjs';
 
 var DTYPES;
 var ctor;
