@@ -52,7 +52,8 @@
     "@stdlib/assert-is-array": "^0.2.2",
     "@stdlib/assert-is-buffer": "^0.2.2",
     "@stdlib/assert-is-struct-constructor-like": "github:stdlib-js/assert-is-struct-constructor-like#main",
-    "@stdlib/utils-constructor-name": "^0.2.2"
+    "@stdlib/utils-constructor-name": "^0.2.2",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
   },
   "devDependencies": {
     "@stdlib/array-struct-factory": "github:stdlib-js/array-struct-factory#main",
