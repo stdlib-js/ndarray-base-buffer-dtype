@@ -51,9 +51,11 @@
     "@stdlib/array-uint8c": "^0.2.2",
     "@stdlib/assert-is-array": "^0.2.2",
     "@stdlib/assert-is-buffer": "^0.2.2",
+    "@stdlib/assert-is-struct-constructor-like": "github:stdlib-js/assert-is-struct-constructor-like#main",
     "@stdlib/utils-constructor-name": "^0.2.2"
   },
   "devDependencies": {
+    "@stdlib/array-struct-factory": "github:stdlib-js/array-struct-factory#main",
     "@stdlib/assert-is-function": "^0.2.2",
     "@stdlib/assert-is-string": "^0.2.2",
     "@stdlib/ndarray-base-buffer-ctors": "^0.3.0",
